@@ -13,12 +13,22 @@ body {
   background-color: whitesmoke;
 }
 
+header h1 {
+  text-align: center;
+}
+
+header nav {
+  width: 80%;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
 .travels {
   display: flex;
   flex-direction: column;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .travels h1 {
@@ -37,9 +47,6 @@ body {
 .travels .travel-info li {
   border-bottom: 1px solid gray;
   padding: 0.3em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .travels .travel-info li.description {

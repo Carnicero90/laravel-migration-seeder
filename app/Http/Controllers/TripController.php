@@ -47,9 +47,13 @@ class TripController extends Controller
      * @param  \App\Trip  $trip
      * @return \Illuminate\Http\Response
      */
-    public function show(Trip $trip)
+    public function show($id)
     {
-        //
+        $trip = Trip::findOrFail($id);
+        $data = [
+            'trip' => $trip
+        ];
+        return view('trips.show', $data);
     }
 
     /**

@@ -1,7 +1,6 @@
 .travels {
     display: flex;
     flex-direction: column;
-    width: max-content;
     h1 {
         text-transform: uppercase;
         font-weight: 700;
@@ -15,7 +14,6 @@
         li {
             border-bottom: 1px solid gray;
             padding: .3em;
-            width: max-content;
             &.description {
                 border: 1px solid slategray;
                 background-color: thistle;
