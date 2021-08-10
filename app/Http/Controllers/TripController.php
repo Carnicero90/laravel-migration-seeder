@@ -18,6 +18,7 @@ class TripController extends Controller
             'travels' => Trip::all()
         ];
         return view('trips.index', $data);
+        // return response()->json(Trip::all());
     }
 
     /**

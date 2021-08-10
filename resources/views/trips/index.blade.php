@@ -5,6 +5,9 @@
     <ul>
         @foreach ($travels as $travel)
         <li>
+            @@auth
+                
+            @endauth
             <ul class="travel-info">
                 <li>Partenza: {{ $travel->from }}</li>
                 <li>Destinazione: {{ $travel->to }}</li>
